@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[77]:
+# sandeep kumar jnu
 
 
 paragraph=''' 
@@ -112,8 +112,6 @@ plist=paragraph.split()
 print(plist)
 
 
-# In[78]:
-
 
 def Ngram(s,n):
     s=s.split()
@@ -121,30 +119,17 @@ def Ngram(s,n):
     
 
 
-# In[79]:
-
-
 print(Ngram(paragraph,7))
-
-
-# In[80]:
-
 
 def getNGrams(plist, n):
     ngrams = []
     for i in range(len(plist)-(n-1)):
         ngrams.append(tuple(plist[i:i+n]))
     return ngrams
-
-
-# In[81]:
-
+  
 
 x=getNGrams(plist, 7)
 print(x)
-
-
-# In[82]:
 
 
 print(len(x))
@@ -156,39 +141,22 @@ for i in gram2:
     print(i)
 
 
-# In[83]:
-
-
 diction=dict()
 for i in gram2:
     diction[i]=0
 print(diction)
 
 
-# In[84]:
-
-
 for i in x:
     
     diction[i]+=1
-    
-    
-
-
-# In[85]:
 
 
 print(diction)
 
 
-# In[86]:
-
-
 for i in sorted (diction,key=diction.get,reverse=True):
     print((i,diction[i]),"\n")
-
-
-# In[87]:
 
 
 def recommendation(word1,word2,word3):
@@ -199,9 +167,6 @@ word1 = 'I'
 word2='am'   
 word3='a'
 print(recommendation(word1,word2,word3))
-
-
-# In[88]:
 
 
 def get2GramSentence(word1,word2,word3,word4,word5,word6,n ):
@@ -240,9 +205,7 @@ print("7-gram sentence:")
 str=" "
 print(str.join(get2GramSentence(word1,word2,word3,word4,word5,word6,839)))
 
-
-# In[14]:
-
+''''''
 
 The licenses for most software and other practical works are designed
 to take away your freedom to share and change the works.  By contrast,
@@ -269,3 +232,4 @@ work under this License, and how to view a copy of this License.  If
 the interface presents a list of user commands or options, such as a
 menu, a prominent item in the list meets this criterion.
 
+''''''
