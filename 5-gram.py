@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# sandeep kumar jnu
 
 
 paragraph=''' 
@@ -112,9 +112,6 @@ plist=paragraph.split()
 print(plist)
 
 
-# In[ ]:
-
-
 Definitions. "This License" refers to version 3 of the GNU General Public License for most of our software; it applies also to any other work released this way by its authors. 
  You can apply it to your programs, too. 
  When we speak of free software, we are referring to freedom, not price. 
@@ -123,22 +120,12 @@ Definitions. "This License" refers to version 3 of the GNU General Public Licens
  Therefore, you have certain responsibilities if you distribute copies of such a program, whether gratis or for a fee, you must pass on to the recipients the same freedoms that you received. 
 
 
-# In[2]:
-
-
 def Ngram(s,n):
     s=s.split()
     return ([s[i:i+n] for i in range(len(s)-(n-1))])
-    
-
-
-# In[3]:
 
 
 print(Ngram(paragraph,3))
-
-
-# In[4]:
 
 
 def getNGrams(plist, n):
@@ -148,20 +135,11 @@ def getNGrams(plist, n):
     return ngrams
 
 
-# In[5]:
-
-
 x=getNGrams(plist, 5)
 print(x)
 
 
-# In[6]:
-
-
 #def frequency(getNGrams(wordlist, 4))
-
-
-# In[7]:
 
 
 print(len(x))
@@ -173,39 +151,20 @@ for i in gram2:
     print(i)
 
 
-# In[8]:
-
-
 diction=dict()
 for i in gram2:
     diction[i]=0
 print(diction)
 
-
-# In[9]:
-
-
 for i in x:
     
     diction[i]+=1
-    
-    
-
-
-# In[10]:
-
 
 print(diction)
 
 
-# In[11]:
-
-
 for i in sorted (diction,key=diction.get,reverse=True):
     print((i,diction[i]),"\n")
-
-
-# In[13]:
 
 
 def recommendation(word1,word2,word3):
@@ -216,9 +175,6 @@ word1 = 'I'
 word2='am'   
 word3='a'
 print(recommendation(word1,word2,word3))
-
-
-# In[32]:
 
 
 def get2GramSentence(word1,word2,word3,word4,n ):
@@ -251,10 +207,7 @@ print("4-gram sentence:")
 str=" "
 print(str.join(get2GramSentence(word1,word2,word3,word4,512)))
 
-
-# In[14]:
-
-
+'''
 The licenses for most software and other practical works are designed
 to take away your freedom to share and change the works.  By contrast,
 the GNU General Public License is intended to guarantee your freedom to
@@ -271,3 +224,4 @@ them if you wish), that you receive source code or can get it if you
 want it, that you can change the software or use pieces of it in new
 free programs, and that you know you can do these things.
 
+'''
