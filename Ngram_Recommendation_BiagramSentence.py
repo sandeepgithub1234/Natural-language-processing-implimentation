@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
+# sandeep kumar jnu
 
-# In[1]:
+
 
 
 wordstring = 'it was the best of times it was the worst of times '
@@ -11,7 +12,6 @@ wordlist = wordstring.split()
 print(wordlist[0:4])
 
 
-# In[4]:
 
 
 def Ngram(s,n):
@@ -20,13 +20,8 @@ def Ngram(s,n):
     
 
 
-# In[5]:
-
-
 print(Ngram(wordlist,3))
 
-
-# In[14]:
 
 
 def getNGrams(wordlist, n):
@@ -36,20 +31,14 @@ def getNGrams(wordlist, n):
     return ngrams
 
 
-# In[16]:
-
 
 x=getNGrams(wordlist, 4)
 print(x)
 
 
-# In[ ]:
-
 
 #def frequency(getNGrams(wordlist, 4))
 
-
-# In[73]:
 
 
 print(len(x))
@@ -61,8 +50,6 @@ for i in gram2:
     print(i)
 
 
-# In[90]:
-
 
 diction=dict()
 for i in gram2:
@@ -70,30 +57,17 @@ for i in gram2:
 print(diction)
 
 
-# In[91]:
-
-
 for i in x:
     
     diction[i]+=1
     
-    
-
-
-# In[92]:
-
-
 print(diction)
-
-
-# In[98]:
 
 
 for i in sorted (diction,key=diction.get,reverse=True):
     print((i,diction[i]),"\n")
 
 
-# In[126]:
 
 
 def recommendation(word1,word2):
@@ -104,8 +78,6 @@ word1 = 'was'
 word2='the'     
 recommendation(word1,word2)
 
-
-# In[125]:
 
 
 def get2GramSentence(word1,word2,n ):
@@ -130,10 +102,3 @@ print("Start word: ", word1,word2,word3)
 print("2-gram sentence:")
 print(get2GramSentence(word1,word2,7))
 print(" ")
-
-
-# In[ ]:
-
-
-
-
