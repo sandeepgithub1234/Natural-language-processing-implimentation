@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[27]:
+# sandeep kumar jnu
 
 
 paragraph=''' GNU GENERAL PUBLIC LICENSE
@@ -682,22 +682,12 @@ plist=paragraph.split()
 print(plist)
 
 
-# In[28]:
-
-
 def Ngram(s,n):
     s=s.split()
     return ([s[i:i+n] for i in range(len(s)-(n-1))])
-    
-
-
-# In[29]:
 
 
 print(Ngram(paragraph,3))
-
-
-# In[30]:
 
 
 def getNGrams(plist, n):
@@ -707,20 +697,10 @@ def getNGrams(plist, n):
     return ngrams
 
 
-# In[31]:
-
-
 x=getNGrams(plist, 4)
 print(x)
 
-
-# In[32]:
-
-
 #def frequency(getNGrams(wordlist, 4))
-
-
-# In[33]:
 
 
 print(len(x))
@@ -731,41 +711,20 @@ print(len(gram2))
 for i in gram2:
     print(i)
 
-
-# In[34]:
-
-
 diction=dict()
 for i in gram2:
     diction[i]=0
 print(diction)
 
-
-# In[35]:
-
-
 for i in x:
     
     diction[i]+=1
-    
-    
-
-
-# In[36]:
 
 
 print(diction)
 
-
-# In[37]:
-
-
 for i in sorted (diction,key=diction.get,reverse=True):
     print((i,diction[i]),"\n")
-
-
-# In[38]:
-
 
 def recommendation(word1,word2):
     for i in sorted (diction,key=diction.get,reverse=True):
@@ -774,9 +733,6 @@ def recommendation(word1,word2):
 word1 = 'you'
 word2='distribute'   
 recommendation(word1,word2)
-
-
-# In[40]:
 
 
 def get2GramSentence(word1,word2,word3,n ):
@@ -802,10 +758,6 @@ print("Start word: ", word1,word2,word3)
 
 print("3-gram sentence:")
 print(get2GramSentence(word1,word2,word3,20))
-print(" ")
-
-
-# In[41]:
 
 
 word1 = 'the'
@@ -815,10 +767,6 @@ print("Start word: ", word1,word2,word3)
 
 print("3-gram sentence:")
 print(get2GramSentence(word1,word2,word3,20))
-print(" ")
-
-
-# In[42]:
 
 
 word1='The'
@@ -828,10 +776,6 @@ print("Start word: ", word1,word2,word3)
 
 print("3-gram sentence:")
 print(get2GramSentence(word1,word2,word3,20))
-print(" ")
-
-
-# In[ ]:
 
 
 actual='The licenses for most software and other practical works are designed
