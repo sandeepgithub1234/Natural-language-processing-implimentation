@@ -4061,22 +4061,15 @@ plist=paragraph.split()
 print(plist)
 
 
-# In[10]:
+
 
 
 def Ngram(s,n):
     s=s.split()
     return ([s[i:i+n] for i in range(len(s)-(n-1))])
-    
-
-
-# In[11]:
 
 
 print(Ngram(paragraph,3))
-
-
-# In[12]:
 
 
 def getNGrams(plist, n):
@@ -4086,20 +4079,12 @@ def getNGrams(plist, n):
     return ngrams
 
 
-# In[13]:
-
 
 x=getNGrams(plist, 4)
 print(x)
 
 
-# In[14]:
-
-
 #def frequency(getNGrams(wordlist, 4))
-
-
-# In[15]:
 
 
 print(len(x))
@@ -4111,39 +4096,20 @@ for i in gram2:
     print(i)
 
 
-# In[16]:
-
-
 diction=dict()
 for i in gram2:
     diction[i]=0
 print(diction)
 
 
-# In[17]:
-
-
 for i in x:
     
     diction[i]+=1
     
-    
-
-
-# In[18]:
-
-
 print(diction)
-
-
-# In[19]:
-
 
 for i in sorted (diction,key=diction.get,reverse=True):
     print((i,diction[i]),"\n")
-
-
-# In[39]:
 
 
 def recommendation(word1,word2,word3):
@@ -4154,9 +4120,6 @@ word1 = 'I'
 word2='am'   
 word3='a'
 recommendation(word1,word2,word3)
-
-
-# In[37]:
 
 
 def get2GramSentence(word1,word2,word3,n ):
@@ -4185,9 +4148,6 @@ print(get2GramSentence(word1,word2,word3,100))
 print(" ")
 
 
-# In[ ]:
-
-
 I shall obey his will .
 You must not marvel , Helen , at my course ,
 Which holds not colour with the time , nor does 
@@ -4203,8 +4163,6 @@ Greater than shows itself at the first view
 To you that know them not . This to my mother .
 
 
-# In[36]:
-
 
 word1 = 'good'
 word2='my'
@@ -4214,9 +4172,6 @@ print("Start word: ", word1,word2,word3)
 print("3-gram sentence:")
 print(get2GramSentence(word1,word2,word3,20))
 print(" ")
-
-
-# In[ ]:
 
 
 Something , and scarce so much : nothing , indeed .
@@ -4231,9 +4186,6 @@ I shall not break your bidding , good my lord .
 Farewell .
 
 
-# In[43]:
-
-
 word1='The'
 word2='licenses'
 word3='for'
@@ -4242,9 +4194,6 @@ print("Start word: ", word1,word2,word3)
 print("3-gram sentence:")
 print(get2GramSentence(word1,word2,word3,20))
 print(" ")
-
-
-# In[ ]:
 
 
 The licenses for most software and other practical works are designed
